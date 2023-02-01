@@ -1,0 +1,40 @@
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.secondary {
+    background-color: lightgray;
+    color: black;
+}
+.default {
+    background-color: DeepSkyBlue;
+    color: white;
+}
+.red {
+    background-color: red;
+    color: white;
+}
+.default:hover,
+.red:hover,
+.secondary:hover {
+    background-color: #9ca5a5;
+}
+.default:active,
+.red:active,
+.secondary:active {
+    transform: translateY(2px);
+}
+.button:disabled {
+    background-color: lightgray;
+    color: darkgray;
+    cursor: default;
+}
